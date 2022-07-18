@@ -4,6 +4,15 @@ import { Button } from "./Button";
 export default {
   title: "Component/Button",
   component: Button,
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: "Yellow", value: "#FFE5B9" },
+        { name: "Orange", value: "#F5A962" },
+        { name: "Grey", value: "#EEEEEE" },
+      ],
+    },
+  },
   argTypes: {
     size: {
       control: "select",
